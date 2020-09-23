@@ -1,0 +1,84 @@
+<html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<head>
+    <style>
+
+
+body
+   {
+    background-image:url("../static/images/pre.jpg");
+    height:50px;
+    background-size:cover;
+
+}
+h1 {
+    color:#64dfdf;
+}
+h2 {
+   color:white;
+   }
+.hi {
+  overflow: hidden;
+  background-color: white;
+
+}
+.hi a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.hi a:hover {
+  background-color: #64dfdf;
+  color: black;
+}
+.hi a.active {
+  background-color: #64dfdf;
+  color: black;
+}
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+<div style="padding-left:0px">
+ <div class="hi">
+        <a href="/">Home</a>
+        <a href="/contactus/"> Contact Us</a>
+        <a class="active" a href="about/"> About Us</a>
+     <div style="margin-top:10px; margin-right:20px; color:black; text-align:right;">
+         For any query, contact us at<em class="fa fa-phone"></em> +91-7307399944,+91-7973494585,+91-8283824812
+     </div>
+ </div>
+
+    <form action="/">
+
+        <center> <h1><b>Predictions World</b></h1></center><br><br><br><br>
+<!--        <h2 href="www.ris-ai.com" target="'"><i>ris-ai</i></h2>-->
+        <h2 class="heading"><i>To Know about us click below link:</i></h2><br>
+        <a href="http://www.ris-ai.com" target="_blank" style="color:white; margin-right:20px text-align:right;" >click here</a>?<br />
+
+</form>
+
+</div>
+
+<script>
+$('select').change(function(){
+var url = $(this).val();
+window.location = url;
+});
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<head>
+    <style>
+
+
+body
+   {
+    background-image:url("../static/images/pre.jpg");
+    height:50px;
+    background-size:cover;
+
+}
+h1 {
+    color:#e85d04;
+}
+h2 {
+   color:white;
+   }
+.hi {
+  overflow: hidden;
+  background-color: white;
+
+}
+.hi a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.hi a:hover {
+  background-color: #dc2f02;
+  color: black;
+}
+.hi a.active {
+  background-color: #e85d04;
+  color: black;
+}
+
+    </style>
+
+</head>
+<body>
+<div style="padding-left:0px">
+ <div class="hi">
+        <a class="active" href="#home">Home</a>
+        <a href="contactus/"> Contact Us</a>
+        <a href="about/"> About Us</a>
+     <div style="margin-top:10px; margin-right:20px; color:black; text-align:right;">
+                  For any query, contact us at<em class="fa fa-phone"></em> +91-7307399944,+91-7973494585,+91-8283824812
+     </div>
+ </div>
+
+    <form action="/">
+
+        <center> <h1><b>Let's Predict</b></h1></center><br>
+
+        <h2 class="heading" align="center"><i>Which file do you want to predict </i></h2><br>
+        <marquee style="color:white"><b>*** click on dropdown to have list of files ***</b></marquee><br><br>
+
+    <center><select name="dropdown" style="width: 500px;" >
+        <option  value=""selected>Choose your option</option>
+        <option value="http://127.0.0.1:8080/wine/">wine</option>
+        <option value="http://127.0.0.1:8080/migration/">migration</option>
+        <option value="http://127.0.0.1:8080/car/">Car purchasing</option>
+        <option value="http://127.0.0.1:8080/heart/">Heart disease</option>
+        <option value="http://127.0.0.1:8080/diabetes">Diabetes</option>
+        <option value="http://127.0.0.1:8080/Glass">Glass</option>
+        <option value="http://127.0.0.1:8080/liver">liver</option>
+        <option value="http://127.0.0.1:8080/iris">iris</option>
+        <option value="http://127.0.0.1:8080/estate">house</option>
+        <option value="http://127.0.0.1:8080/balance/">Balance</option>
+        <option value="http://127.0.0.1:8080/blood/">blood</option>
+        <option value="http://127.0.0.1:8080/happy/">mood</option>
+        <option value="http://127.0.0.1:8080/poker/">Poker</option>
+        <option value="http://127.0.0.1:8080/haber/">Survival</option>
+        <option value="http://127.0.0.1:8080/cancer/">Cancer</option>
+        <option value="http://127.0.0.1:8080/teach/">teach</option>
+        <option value="http://127.0.0.1:8080/wheat/">wheat</option>
+        <option value="http://127.0.0.1:8080/creditcard/">credit</option>
+        <option value="http://127.0.0.1:8080/titanic/">Titanic</option>
+    </select>
+    </center>
+</form>
+
+</div>
+
+<script>
+$('select').change(function(){
+var url = $(this).val();
+window.location = url;
+});
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+
+<head><h3><a href="/"><b>Back To Home</b></a></h3>
+    <h1><b> Migrane Prediction</b></h1>
+<style>
+    Body {
+    background-image:url("../static/images/mig.jpg");
+    height:100px;
+    background-size:1200px;
+    }
+</style>
+</head>
+<body>
+<div align="centre">
+<form method="post">
+
+    {% csrf_token %}
+    <table>
+    <tr><td>Assessment<td><input type="text"  required  name="Assessment"/></td></tr>
+        <tr><td>Age:<td><input type="text"  required  name="Age"/></td></tr>
+        <tr><td>Shape:<td><input type="text"  required  name="Shape"/></td></tr>
+        <tr><td>Margin:<td><input type="text"  required  name="Margin"/></td></tr>
+        <tr><td>Density:<td><input type="text"  required  name="Density"/></td></tr>
+
+        <tr><td><button type="submit"> Submit</button></td></tr>
+    </table>
+</form>
+    <textarea placeholder="Predicated Value" name="predicatedValue" type="text" class="txt_3">{{migrane.0}}</textarea>
+</div>
+</body>
+</html>
